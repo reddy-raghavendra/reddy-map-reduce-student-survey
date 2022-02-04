@@ -4,7 +4,7 @@ Basic map reduce using python on student survey responses
 ## Data
 For this map reduce, data of the students survey on COVID-19 and its impact on education, social life and mental health of students is chosen.
 
-This data is taken from the website kaggle and the link as follows:
+This data is taken from the website kaggle and the link is as follows:
 [Data link](https://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students)
 
 Data is collected from students of different age groups from different educational institutions in Delhi National Capital Region(NCR) which is a survey of 1182 students.
