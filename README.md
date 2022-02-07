@@ -27,3 +27,18 @@ Find out the average daily time spent by students self studying based on their a
 
     From the above agraph we can infer that age groups greater than 24 are more in the top 10 compared to age groups less than 24 which is quite surprising.
 
+## Execution Instructions
+-   Once the project is cloned, open powershell as administration in the root folder of the project.
+-   You should find the input .csv file with the name "Survey_Student.csv".
+-   We use this file as an input to the mapper python file as follows:
+    > cat Survey_Student.csv | Python 02mapper.py
+-   The mapped data need to be sorted before reducing it, we execute the following command:
+    > cat Survey_Student.csv | Python 02mapper.py | sort
+-   The sorted file is then reduced with the following command:
+    > cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py
+-   We can append the reduced data to a new file with command "> reddy_output.txt"
+
+We can do all the above tasks with a single chaining of commands as follows:
+> cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py > reddy_output.txt
+
+
