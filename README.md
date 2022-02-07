@@ -31,7 +31,9 @@ Find out the average daily time spent by students self studying based on their a
 -   Once the project is cloned, open powershell as administration in the root folder of the project.
 -   You should find the input .csv file with the name "Survey_Student.csv".
 -   We use this file as an input to the mapper python file as follows:
-    > cat Survey_Student.csv | Python 02mapper.py
+    ```
+    cat Survey_Student.csv | Python 02mapper.py
+    ```
 -   The mapped data need to be sorted before reducing it, we execute the following command:
     > cat Survey_Student.csv | Python 02mapper.py | sort
 -   The sorted file is then reduced with the following command:
