@@ -35,12 +35,18 @@ Find out the average daily time spent by students self studying based on their a
     cat Survey_Student.csv | Python 02mapper.py
     ```
 -   The mapped data need to be sorted before reducing it, we execute the following command:
-    > cat Survey_Student.csv | Python 02mapper.py | sort
+    ```
+    cat Survey_Student.csv | Python 02mapper.py | sort
+    ```
 -   The sorted file is then reduced with the following command:
-    > cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py
+    ```
+    cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py
+    ```
 -   We can append the reduced data to a new file with command "> reddy_output.txt"
 
 We can do all the above tasks with a single chaining of commands as follows:
-> cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py > reddy_output.txt
+```
+cat Survey_Student.csv | Python 02mapper.py | sort | Python 02reducer.py > reddy_output.txt
+```
 
 
